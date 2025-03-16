@@ -33,4 +33,9 @@ public class TaskController {
     public TaskModel findTaskById(@PathVariable Long id) {
         return taskService.findTaskById(id);
     }
+    @PatchMapping("{id}")
+    public TaskModel updateTask(@PathVariable Long id, @RequestBody TaskModel updatedTask) {
+        return taskService.updateTask(id, updatedTask);
+    }
 }
+
