@@ -29,10 +29,6 @@ spring.datasource.password=admin
 ```bash
 ./mvnw spring-boot:run
 ```
-or, if using Gradle:
-```bash
-./gradlew bootRun
-```
 
 ### ✅ Access the API
 The API will be running at: [http://localhost:8080](http://localhost:8080)
